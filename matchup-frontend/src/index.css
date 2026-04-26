@@ -1,0 +1,58 @@
+/* src/index.css */
+
+/* Import Google Font (keep this at top) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+
+/* Tailwind layers (must be present for Tailwind to inject its styles) */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global body styles */
+body {
+  color: #ffffff; /* text-white */
+  font-family: 'Poppins', sans-serif;
+
+  /* Sports-themed gradient background */
+  background: linear-gradient(135deg, #0a2e6e 0%, #0e9a71 100%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+/* Branding: consistent MatchUp styling */
+.matchup-brand {
+  font-weight: 800;
+  letter-spacing: 0.4px;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.12rem;
+  text-shadow: 0 1px 0 rgba(0,0,0,0.25);
+}
+
+.matchup-brand .match {
+  color: #ffffff; /* white for "Match" */
+}
+
+.matchup-brand .up {
+  color: #6ee7b7; /* green-300 for "Up" */
+}
+
+/* Button link reset: remove underlines and keep button feel */
+.btn-link-reset {
+  text-decoration: none !important;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Small link used in error banner */
+.small-no-underline {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Utility to ensure nav/links don't show underlines from browser styles */
+a {
+  -webkit-text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
+}
